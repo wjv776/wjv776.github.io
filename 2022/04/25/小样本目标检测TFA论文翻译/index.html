@@ -8,7 +8,7 @@
         <link rel="shortcut icon" href="https://pic2.zhimg.com/v2-15c4f672b97abbb1e0e25a24d92856e6_1440w.jpg?source=172ae18b"/>
         <link rel="canonical" href="http://guolinn.com/">
         <link rel="alternate" type="application/rss+xml" title="我爱吃草莓" href="">
-        <title>PicGo+Github图床搭建 | 我爱吃草莓的博客</title>
+        <title>小样本目标检测TFA论文翻译 | 我爱吃草莓的博客</title>
         <meta name="description" content="{{meta_description}}">
 
         <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -45,34 +45,21 @@
     <span class="taglist">  &middot; 
     
     
-      <a href='/tags/图床/'>图床</a> 
+      <a href='/tags/小样本学习/'>小样本学习</a> 
     
-      <a href='/tags/博客/'>博客</a> 
+      <a href='/tags/小样本检测/'>小样本检测</a> 
+    
+      <a href='/tags/目标检测/'>目标检测</a> 
+    
+      <a href='/tags/微调/'>微调</a> 
     
     </span>
   
 
-  <h1 class="post-title">PicGo+Github图床搭建</h1>
+  <h1 class="post-title">小样本目标检测TFA论文翻译</h1>
   <section class="post-content article-entry">
-    <p>日常markdown写作时时常会遇到粘贴图片问题，而markdown相当于把图片保存在本地路径下读取，无法便捷移动操作，调研各种图床后选用便捷稳定轻量级的PicGo+Github方式，配置只需几步，特别简单，具体步骤如下：</p>
-<h2 id="新建github图床仓库"><a href="#新建github图床仓库" class="headerlink" title="新建github图床仓库"></a>新建github图床仓库</h2><p>注册github账号，新建图床仓库用于存放图片。</p>
-<img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425001944.png" style="zoom: 50%;" />
-
-<h2 id="生成github的token用于后续通过PicGo访问"><a href="#生成github的token用于后续通过PicGo访问" class="headerlink" title="生成github的token用于后续通过PicGo访问"></a>生成github的token用于后续通过PicGo访问</h2><img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425002255.png" style="zoom: 50%;" />
-
-<img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425002425.png" style="zoom:80%;" />
-
-<p>把权限全都勾选上</p>
-<img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425002508.png" style="zoom: 50%;" />
-
-<h2 id="下载PicGo，配置信息"><a href="#下载PicGo，配置信息" class="headerlink" title="下载PicGo，配置信息"></a>下载PicGo，配置信息</h2><p>PicGo的下载地址为：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
-<p>安装后配置github信息，其中仓库名为github用户名&#x2F;图床仓库名。</p>
-<img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425002823.png" style="zoom: 50%;" />
-
-<p>为了更加便利可以设置自己熟悉的快捷键，后续复制图片直接用快捷键自动上传并生成链接，在markdown可以直接粘贴使用。</p>
-<img src="https://raw.githubusercontent.com/wjv776/pictures/master/img/20220425003045.png" style="zoom: 50%;" />
-
-<p>接下来就可以愉快的写文章啦！</p>
+    <h2 id="Frustratingly-Simple-Few-Shot-Object-Detection"><a href="#Frustratingly-Simple-Few-Shot-Object-Detection" class="headerlink" title="Frustratingly Simple Few-Shot Object Detection"></a>Frustratingly Simple Few-Shot Object Detection</h2><p>本文为ICML 2020的一篇小样本目标检测算法。</p>
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>从几个样例中检测稀有物体是一个最近新出现的问题。先前的工作表明元学习是一种很有效的方法。但微调技术很少引起关注。我们发现仅微调现有检测器最后一层稀有类别部分对小样本目标检测任务至关重要。这种简单的方法在当前基准上比元学习方法大约好 2∼20 个点，有时甚至使先前方法的准确性提高一倍。然而，小样本中的高方差往往导致现有基准不那么可靠。我们通过对多组训练示例进行采样修改评估协议从而获得更稳定的比较，并基于三个数据集建立新的基准：PASCAL VOC、COCO 和 LVIS。同样，我们的微调方法在修订后的基准上达到最佳效果。代码和预训练模型可在 <a target="_blank" rel="noopener" href="https://github.com/ucbdrive/few-shot-object-detection">https://github.com/ucbdrive/few-shot-object-detection</a> 获得。</p>
 
   </section>
   <footer class="post-footer">
@@ -87,11 +74,11 @@
 
 <nav class="pagination" role="pagination">
     
-    <a class="newer-posts" href="/2022/04/25/hexo%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">
-        ← prev <!--hexo语法笔记-->
-    </a>
-    
     <span class="page-number">•</span>
+    
+    <a class="older-posts" href="/2022/04/25/markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/">
+        <!--markdown语法笔记--> next →
+    </a>
     
 </nav>
 
